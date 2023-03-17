@@ -201,7 +201,7 @@ export type StringOperationFilterInput = {
 export type GetCustomersQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetCustomersQuery = { __typename?: 'Query', customers?: Array<{ __typename?: 'Customer', id: number, firstname?: string | null, lastname?: string | null, contactNumber?: string | null, address?: { __typename?: 'Address', addressLine1?: string | null, addressLine2?: string | null, state?: string | null, country?: string | null, city?: string | null } | null, orders?: Array<{ __typename?: 'Order', id: number, orderDate: any } | null> | null } | null> | null };
+export type GetCustomersQuery = { __typename?: 'Query', customers?: Array<{ __typename?: 'Customer', id: number, firstname?: string | null, lastname?: string | null, contactNumber?: string | null, email?: string | null, address?: { __typename?: 'Address', addressLine1?: string | null, addressLine2?: string | null, state?: string | null, country?: string | null, city?: string | null } | null, orders?: Array<{ __typename?: 'Order', id: number, orderDate: any } | null> | null } | null> | null };
 
 export type GetOrdersQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -216,6 +216,7 @@ export const GetCustomersDocument = gql`
     firstname
     lastname
     contactNumber
+    email
     address {
       addressLine1
       addressLine2

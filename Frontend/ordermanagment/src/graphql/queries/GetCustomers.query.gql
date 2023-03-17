@@ -4,6 +4,7 @@ query GetCustomers {
     firstname
     lastname
     contactNumber
+    email
 
     address {
       addressLine1
