@@ -36,7 +36,7 @@ A fullstack app to maintain track of customers and orders
 - react and typescript
 - Graphql
 - Apollo client - make the request and caches our objects
-- Graphql Code generator (codegen)
+- Graphql Code generator (yarn codegen)
 
 
 ## STYLING - Materail UI React
