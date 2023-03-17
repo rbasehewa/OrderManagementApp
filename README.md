@@ -1,3 +1,9 @@
+## -- run the project --
+
+# Backend  - dotnet watch run
+
+# Frontend - yarn start
+
 # OrderManagementApp
 
 A fullstack app to maintain track of customers and orders
@@ -37,3 +43,6 @@ A fullstack app to maintain track of customers and orders
 
 
 ## ROUTING - React Router
+
+
+## AG Grid - customers data into a grid 
