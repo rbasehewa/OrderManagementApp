@@ -4,7 +4,7 @@ import { Customer, useGetCustomersQuery } from '../../../graphql/generated/schem
 import CustomerList from './CustomerList';
 
 export default function CustomersDashboard(){
-    const {data : customersData, loading,error} = useGetCustomersQuery();
+    const {data : customersData, loading, error} = useGetCustomersQuery();
 
     if(loading){
         return <div>Loading...</div>
