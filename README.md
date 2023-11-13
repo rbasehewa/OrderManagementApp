@@ -45,4 +45,8 @@ A fullstack app to maintain track of customers and orders
 ## ROUTING - React Router
 
 
-## AG Grid - customers data into a grid 
+## AG Grid - customers data and orders data into a grid 
+
+## define message for loading and error
+
+## adding formic pakage for 
