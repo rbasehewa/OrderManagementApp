@@ -50,3 +50,5 @@ A fullstack app to maintain track of customers and orders
 ## define message for loading and error
 
 ## adding formic pakage for 
+
+## working with form - install yup package for validation
