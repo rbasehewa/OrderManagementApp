@@ -35,7 +35,7 @@ const FORM_VALIDATION = yup.object().shape({
     city: yup.string()
     .required("city is required"),
 
-})
+});
 
 export default function CustomerForm({customer} : CustomerFormProps){
 

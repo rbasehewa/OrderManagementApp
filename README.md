@@ -52,3 +52,6 @@ A fullstack app to maintain track of customers and orders
 ## adding formic pakage for 
 
 ## working with form - install yup package for validation
+
+
+## Get the date adding new package call date-fns
