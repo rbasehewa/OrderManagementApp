@@ -7,6 +7,7 @@ import OrdersDashboard from '../../features/orders/ordersDashboard/OrdersDashboa
 import Layout from './Layout';
 import './styles.css';
 import CustomerPage from '../../features/customers/CustomerPage';
+import OrderPage from '../../features/orders/ordersDashboard/OrderPage';
 
 const client  = new ApolloClient({
   cache: new InMemoryCache({
@@ -25,7 +26,7 @@ function App() {
             <Route index element={<HomePage /> } />
             <Route path="customers" element={<CustomersDashboard /> } />
             <Route path='customers/:customerId' element={<CustomerPage />} />
-            <Route path="orders" element={<OrdersDashboard /> } />
+            <Route path="orders/:orderId" element={<OrderPage /> } />
           </Route>
         </Routes>
       </BrowserRouter>

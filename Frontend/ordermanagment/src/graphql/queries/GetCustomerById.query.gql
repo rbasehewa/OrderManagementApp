@@ -1,5 +1,5 @@
 query GetCustomerById($id: Int!) {
-  customers(where: {id: { eq: $id }}) {
+  customers(where: { id: { eq: $id } }) {
     id
     firstname
     lastname
@@ -17,6 +17,17 @@ query GetCustomerById($id: Int!) {
     orders {
       id
       orderDate
+      description
+      totalAmount
+      depositAmount
+      isDelivery
+      status
+      otherNotes
+      customer {
+        id
+        firstname
+        lastname
+      }
     }
   }
 }
