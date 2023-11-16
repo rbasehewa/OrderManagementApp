@@ -208,7 +208,7 @@ export type GetCustomerByIdQueryVariables = Exact<{
 }>;
 
 
-export type GetCustomerByIdQuery = { __typename?: 'Query', customers?: Array<{ __typename?: 'Customer', id: number, firstname?: string | null, lastname?: string | null, contactNumber?: string | null, email?: string | null, address?: { __typename?: 'Address', addressLine1?: string | null, addressLine2?: string | null, state?: string | null, country?: string | null, city?: string | null } | null, orders?: Array<{ __typename?: 'Order', id: number, orderDate: any } | null> | null } | null> | null };
+export type GetCustomerByIdQuery = { __typename?: 'Query', customers?: Array<{ __typename?: 'Customer', id: number, firstname?: string | null, lastname?: string | null, contactNumber?: string | null, email?: string | null, address?: { __typename?: 'Address', addressLine1?: string | null, addressLine2?: string | null, state?: string | null, country?: string | null, city?: string | null } | null, orders?: Array<{ __typename?: 'Order', id: number, orderDate: any, description?: string | null, totalAmount: any, depositAmount: any, isDelivery: boolean, status: Status, otherNotes?: string | null, customer?: { __typename?: 'Customer', id: number, firstname?: string | null, lastname?: string | null } | null } | null> | null } | null> | null };
 
 export type GetOrderByIdQueryVariables = Exact<{
   id: Scalars['Int'];
@@ -290,6 +290,17 @@ export const GetCustomerByIdDocument = gql`
     orders {
       id
       orderDate
+      description
+      totalAmount
+      depositAmount
+      isDelivery
+      status
+      otherNotes
+      customer {
+        id
+        firstname
+        lastname
+      }
     }
   }
 }
